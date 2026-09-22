@@ -1,0 +1,17 @@
+.nom{
+    
+}
+
+#nom{
+
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    font-size: 55px;
+
+}
+
+#status{
+    text-align: left;
+}
+
