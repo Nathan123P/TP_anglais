@@ -1,0 +1,167 @@
+/* Reset basique pour éviter les marges par défaut */ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Le body prend toute la page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(228, 240, 245);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    /* Prend toute la hauteur de la fenêtre */
+    padding: 0;
+    /* Retrait des paddings pour le mode plein écran */
+}
+
+/* Le conteneur principal */
+#cv-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* Prend toute la largeur possible */
+    max-width: 1000px;
+    /* Limite légère sur les très grands écrans */
+    background-color: white;
+    min-height: 100vh;
+    /* S'assure de remplir l'écran */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Colonne de gauche (Aside) */
+.sidebar {
+    width: 30%;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #555;
+    padding-bottom: 25px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 16px;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+}
+
+.target-position {
+    font-size: 14px;
+    color: #4da6ff;
+    font-weight: bold;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.sidebar h4 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #cccccc;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+/* Colonne de droite (Main) */
+.content {
+    width: 70%;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content h2 {
+    font-size: 24px;
+    color: black;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+article {
+    margin-bottom: 25px;
+}
+
+/* Organisation des lignes avec les dates */
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.header-row strong {
+    font-size: 16px;
+    color: black;
+}
+
+.header-row span {
+    font-size: 14px;
+    color: #666;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 14px;
+    color: #444;
+}
+
+.content ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.content li {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 6px;
+}
+
+/* Grille pour les compétences */
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.skills-grid ul {
+    width: 45%;
+}
+
+/* Footer au bas de la zone principale */
+footer {
+    margin-top: auto;
+    /* Pousse le footer vers le bas */
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    color: #888;
+    font-size: 12px;
+}
